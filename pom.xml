@@ -10,6 +10,10 @@
     <modules>
         <module>springboot-hello</module>
         <module>springboot-properties</module>
+        <module>springboot-actuator</module>
+        <module>springboot-logback</module>
+        <module>springboot-aop</module>
+        <module>springboot-exception-handler</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -40,6 +44,13 @@
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
+            </dependency>
+
+            <!--获取浏览器数据-->
+            <dependency>
+                <groupId>eu.bitwalker</groupId>
+                <artifactId>UserAgentUtils</artifactId>
+                <version>${user.agent.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

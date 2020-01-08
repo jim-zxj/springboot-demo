@@ -1,0 +1,6 @@
+2020-01-07 16:05:21.058 ERROR 15508 --- [main] o.example.SpringbootLogbackApplication   SpringbootLogbackApplication.java:18: Spring boot启动初始化了 126 个 Bean
+2020-01-07 16:05:21.097 ERROR 15508 --- [main] o.example.SpringbootLogbackApplication   SpringbootLogbackApplication.java:23: 【SpringBootDemoLogbackApplication】启动异常：
+
+java.lang.ArithmeticException: / by zero
+	at org.example.SpringbootLogbackApplication.main(SpringbootLogbackApplication.java:21)
+

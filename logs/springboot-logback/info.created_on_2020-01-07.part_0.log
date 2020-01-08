@@ -1,0 +1,18 @@
+2020-01-07 16:05:18.336  INFO 15508 --- [main] o.example.SpringbootLogbackApplication   : Starting SpringbootLogbackApplication on LAPTOP-K3MJS0N9 with PID 15508 (D:\Projects\springboot-demo\springboot-logback\target\classes started by x in D:\Projects\springboot-demo)
+2020-01-07 16:05:18.344  INFO 15508 --- [main] o.example.SpringbootLogbackApplication   : No active profile set, falling back to default profiles: default
+2020-01-07 16:05:20.077  INFO 15508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-07 16:05:20.103  INFO 15508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-07 16:05:20.105  INFO 15508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2020-01-07 16:05:20.113  INFO 15508 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_211\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk1.8.0_211\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\x\AppData\Local\Microsoft\WindowsApps;.]
+2020-01-07 16:05:20.249  INFO 15508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2020-01-07 16:05:20.249  INFO 15508 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1731 ms
+2020-01-07 16:05:20.298  INFO 15508 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2020-01-07 16:05:20.309  INFO 15508 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-07 16:05:20.310  INFO 15508 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-07 16:05:20.341  INFO 15508 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2020-01-07 16:05:20.343  INFO 15508 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-07 16:05:20.815  INFO 15508 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-07 16:05:21.013  INFO 15508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/demo'
+2020-01-07 16:05:21.041  INFO 15508 --- [main] o.example.SpringbootLogbackApplication   : Started SpringbootLogbackApplication in 3.525 seconds (JVM running for 4.763)
+2020-01-07 16:05:21.053  INFO 15508 --- [main] o.example.SpringbootLogbackApplication   : Spring boot启动初始化了 126 个 Bean
+2020-01-07 16:05:21.058  WARN 15508 --- [main] o.example.SpringbootLogbackApplication   : Spring boot启动初始化了 126 个 Bean

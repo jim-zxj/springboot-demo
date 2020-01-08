@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-hello" />
+        <module name="springboot-aop" />
+        <module name="springboot-actuator" />
+        <module name="springboot-exception-handler" />
         <module name="springboot-properties" />
+        <module name="springboot-logback" />
+        <module name="springboot-hello" />
       </profile>
     </annotationProcessing>
   </component>
