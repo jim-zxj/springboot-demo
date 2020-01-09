@@ -11,7 +11,9 @@
         <module name="springboot-exception-handler" />
         <module name="springboot-properties" />
         <module name="springboot-logback" />
+        <module name="springboot-redis" />
         <module name="springboot-hello" />
+        <module name="springboot-mybatis" />
       </profile>
     </annotationProcessing>
   </component>
