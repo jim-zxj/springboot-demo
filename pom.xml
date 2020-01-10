@@ -16,6 +16,7 @@
         <module>springboot-exception-handler</module>
         <module>springboot-mybatis</module>
         <module>springboot-redis</module>
+        <module>springboot-quartz</module>
     </modules>
     <packaging>pom</packaging>
 

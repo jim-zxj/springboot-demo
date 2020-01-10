@@ -12,6 +12,7 @@
         <module name="springboot-properties" />
         <module name="springboot-logback" />
         <module name="springboot-redis" />
+        <module name="springboot-quartz" />
         <module name="springboot-hello" />
         <module name="springboot-mybatis" />
       </profile>
