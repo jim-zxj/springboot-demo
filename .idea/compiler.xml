@@ -10,10 +10,12 @@
         <module name="springboot-actuator" />
         <module name="springboot-exception-handler" />
         <module name="springboot-properties" />
+        <module name="springboot-hello" />
+        <module name="springboot-session" />
         <module name="springboot-logback" />
         <module name="springboot-redis" />
         <module name="springboot-quartz" />
-        <module name="springboot-hello" />
+        <module name="springboot-zookeeper" />
         <module name="springboot-mybatis" />
       </profile>
     </annotationProcessing>
