@@ -29,6 +29,7 @@ public class DemoExceptionHandler {
     @ResponseBody
     public ApiResponse jsonErrorHandler(JsonException exception) {
         log.error("【JsonException】:{}", exception.getMessage());
+        System.out.println("----------------------");
         return ApiResponse.ofException(exception);
     }
 
