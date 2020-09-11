@@ -19,6 +19,8 @@
         <module>springboot-quartz</module>
         <module>springboot-session</module>
         <module>springboot-zookeeper</module>
+        <module>springboot-demo-docker</module>
+        <module>springboot-multi-mybatis</module>
     </modules>
     <packaging>pom</packaging>
 

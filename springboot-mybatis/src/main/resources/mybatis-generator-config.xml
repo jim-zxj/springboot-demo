@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <properties resource="application.yml"/>
+    <!--targetRuntime="MyBatis3" 目标环境
+       MyBatis3：豪华版，复杂多条件查询
+       MyBatis3Simple：helloWorld -->
+    <context id="MysqlTables" targetRuntime="MyBatis3" defaultModelType="flat">
+        <!-- 格式化java代码 -->
+        <property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter"/>
+        <!-- 格式化XML代码 -->
+        <property name="xmlFormatter" value="org.mybatis.generator.api.dom.DefaultXmlFormatter"/>
+
+        <!--此处是将Example改名为Criteria 当然 想改成什么都行-->
+        <plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
+            <property name="searchString" value="Example$"/>
+            <property name="replaceString" value="Criteria"/>
+        </plugin>
+
+        <!-- 此处是将UserMapper改名为UserDao 接口。。。  没有生效（无法实例化类）-->
+        <!--<plugin type="org.example.mybatis.generator.rename.plugins.RenameJavaMapperPlugin">
+            <property name="searchString" value="Mapper$"/>
+            <property name="replaceString" value="Dao"/>
+        </plugin>-->
+
+        <commentGenerator>
+            <!-- 是否去除自动生成的注释 true:是;false:否 -->
+            <property name="suppressAllComments" value="true"/>
+            <!--  注释是否包含数据库表的注释信息  true：是 ： false:否 -->
+            <property name="addRemarkComments" value="true"/>
+        </commentGenerator>
+
+        <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://121.196.25.37:3306/db1?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;serverTimezone=GMT%2B8"
+                        userId="root"
+                        password="kuaile+2552">
+        </jdbcConnection>
+
+
+        <!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer，为 true时把JDBC DECIMAL
+           和 NUMERIC 类型解析为java.math.BigDecimal -->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <!-- targetProject:生成Entity类的路径 -->
+        <javaModelGenerator targetProject=".\src\main\java"
+                            targetPackage="org.example.mybatis.entity">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="false"/>
+            <!-- 从数据库返回的值被清理前后的空格 -->
+            <property name="trimStrings" value="true"/>
+            <!-- 是否对model添加 构造函数 -->
+            <property name="constructorBased" value="false"/>
+        </javaModelGenerator>
+
+        <!-- targetProject:XxxMapper.xml映射文件生成的路径 -->
+        <sqlMapGenerator targetProject=".\src\main\resources"
+                         targetPackage="mappers">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="false"/>
+        </sqlMapGenerator>
+
+        <!-- targetPackage：Mapper接口生成的位置 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetProject=".\src\main\java" targetPackage="org.example.mybatis.mapper">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="false"/>
+        </javaClientGenerator>
+
+        <!-- 数据库表名字和我们的entity类对应的映射指定 -->
+        <table tableName="multi_user"
+               domainObjectName="MultiUser"
+               enableCountByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               enableUpdateByExample="false"
+        />
+
+    </context>
+</generatorConfiguration>
